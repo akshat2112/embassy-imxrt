@@ -1,0 +1,38 @@
+
+# cargo-vet config file
+
+[cargo-vet]
+version = "0.10"
+
+[imports.google]
+url = "https://raw.githubusercontent.com/google/supply-chain/main/audits.toml"
+
+[imports.mozilla]
+url = "https://raw.githubusercontent.com/mozilla/supply-chain/main/audits.toml"
+
+[policy.embassy-executor]
+audit-as-crates-io = true
+
+[policy.embassy-executor-macros]
+audit-as-crates-io = true
+
+[policy.embassy-futures]
+audit-as-crates-io = true
+
+[policy.embassy-hal-internal]
+audit-as-crates-io = true
+
+[policy.embassy-imxrt]
+audit-as-crates-io = true
+
+[policy.embassy-sync]
+audit-as-crates-io = true
+
+[policy.embassy-time]
+audit-as-crates-io = true
+
+[policy.embassy-time-driver]
+audit-as-crates-io = true
+
+[policy.embassy-time-queue-utils]
+audit-as-crates-io = true
